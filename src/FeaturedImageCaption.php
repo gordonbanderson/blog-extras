@@ -17,13 +17,19 @@ use SilverStripe\ORM\DataExtension;
 class FeaturedImageCaption extends DataExtension
 {
     private static $db = [
-      'FeaturedImageCaption' => 'Varchar(255)'
+        'FeaturedImageCaption' => 'Varchar(255)',
+        'FeaturedImageCredit' => 'Varchar(255)'
     ];
 
     public function updateCMSFields(FieldList $fields)
     {
         $fields->addFieldToTab('Root.Main',
             TextField::create('FeaturedImageCaption','Image Caption'),
+            'CustomSummary'
+        );
+
+        $fields->addFieldToTab('Root.Main',
+            TextField::create('FeaturedImageCredit','Image source'),
             'CustomSummary'
         );
     }
