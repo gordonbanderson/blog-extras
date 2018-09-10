@@ -2,7 +2,7 @@
   "name": "suilven/blog-extras",
   "type": "silverstripe-vendormodule",
   "description": "Additions to the standard SilverStripe blog module.",
-  "homepage": "https://github.com/suilven/blog-extras",
+  "homepage": "https://github.com/gordonbanderson/blog-extras",
   "keywords": ["blog"],
   "license": "BSD-3-Clause",
   "authors": [
