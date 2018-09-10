@@ -1,11 +1,8 @@
 ---
-Name: blog-extras
+Name: suilven-blog-extras
 ---
 
-# Configure Admin Extensions:
-
-SilverStripe\Admin\LeftAndMain:
-  extra_requirements_css:
-    - "suilven/blog-extras: admin/client/dist/styles/bundle.css"
-  extra_requirements_javascript:
-    - "suilven/blog-extras: admin/client/dist/js/bundle.js"
+SilverStripe\Blog\Model\BlogPost:
+  extensions:
+  - Suilven\Blog\FeaturedBlogPost
+  - Suilven\Blog\FeaturedImageCaption
