@@ -1,0 +1,11 @@
+---
+Name: blog-extras
+---
+
+# Configure Admin Extensions:
+
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_css:
+    - "suilven/blog-extras: admin/client/dist/styles/bundle.css"
+  extra_requirements_javascript:
+    - "suilven/blog-extras: admin/client/dist/js/bundle.js"
