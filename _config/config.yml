@@ -6,3 +6,7 @@ SilverStripe\Blog\Model\BlogPost:
   extensions:
   - Suilven\Blog\FeaturedBlogPost
   - Suilven\Blog\FeaturedImageCaption
+
+PageController:
+  extensions:
+    - Suilven\Blog\FeaturedBlogPosts
