@@ -20,4 +20,9 @@ class FeaturedBlogPosts extends Extension
         return BlogPost::get()->filter('Featured', true);
     }
 
+    public function UnFeaturedPosts()
+    {
+        return BlogPost::get()->filter('Featured', false);
+    }
+
 }
