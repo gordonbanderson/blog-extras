@@ -22,7 +22,8 @@ class FeaturedBlogPosts extends Extension
 
     public function UnFeaturedPosts()
     {
-        return BlogPost::get()->filter('Featured', false);
+        //@todo 'false' breaks PostgreSQL, need to do a database source check?
+        return BlogPost::get()->filter('Featured', 0);
     }
 
 }
